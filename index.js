@@ -87,6 +87,6 @@ client.connect((err) => {
   console.log("connected to db");
 });
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("app is listening");
 });
